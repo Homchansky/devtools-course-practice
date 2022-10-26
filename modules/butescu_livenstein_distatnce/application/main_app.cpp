@@ -1,4 +1,4 @@
-// Copyright 2022 Andrich Maria
+// Copyright 2022 Grushin Dmitriy
 
 #include <string>
 #include <algorithm>

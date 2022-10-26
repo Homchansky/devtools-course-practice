@@ -16,13 +16,13 @@ set_tests_properties(${prefix}first_test PROPERTIES
     LABELS "${MODULE}")
 
 add_test(NAME ${prefix}second_test
-    COMMAND ${APPLICATION} Russia, Bulgaria)
+    COMMAND ${APPLICATION} USA, Bulgaria)
 set_tests_properties(${prefix}second_test PROPERTIES
     LEVENSHTEIN_DISTANCE ""
     LABELS "${MODULE}")
 
 add_test(NAME ${prefix}third_test
-    COMMAND ${APPLICATION} Argentina, Germany)
+    COMMAND ${APPLICATION} Argentina, Bulgaria)
 set_tests_properties(${prefix}third_test PROPERTIES
     LEVENSHTEIN_DISTANCE ""
     LABELS "${MODULE}")

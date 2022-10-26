@@ -1,4 +1,4 @@
-// Copyright 2022 Andrich Maria
+// Copyright 2022 Grushin Dmitriy
 #ifndef MODULES_BUTESCU_LIVENSTEIN_DISTATNCE_INCLUDE_LEVENSHTEIN_DISTANCE_APP_H_
 #define MODULES_BUTESCU_LIVENSTEIN_DISTATNCE_INCLUDE_LEVENSHTEIN_DISTANCE_APP_H_
 
@@ -10,8 +10,6 @@
 class LevenshteinApp {
  public:
     std::string operator()(int argc, const char* argv[]);
- private:
-    static inline std::string help(const char* appname);
 };
 
 #endif  // MODULES_BUTESCU_LIVENSTEIN_DISTATNCE_INCLUDE_LEVENSHTEIN_DISTANCE_APP_H_
