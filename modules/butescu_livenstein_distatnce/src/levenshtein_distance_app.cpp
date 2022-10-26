@@ -13,11 +13,10 @@ std::string LevenshteinApp::operator()(int argc, const char* argv[]) {
         +"just enter 2 words to get started\n"
         + std::string{ argv[0]};
     }
-    Levenshtein L;
-    std::string const& source{};
-    std::string const& target{};
-    int distance =
-      L.LevenshteinDistance(source, target);
+    std::vector<std::vector<int>> lev_dist(source.length() + 1,
+      std::vector<int>(target.length() + 1));
+    lev_dist[0][0] = 0;
+    return std::to_string(lev_dist[source.length()][target.length()]);
     return std::to_string(distance);
 }
 
